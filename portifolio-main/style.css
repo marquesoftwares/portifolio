@@ -59,3 +59,8 @@
   .project-visual img,.project-visual.visual-3 img{object-fit:cover;transform:none}
   .project-card:hover .project-visual img,.project-card:hover .project-visual.visual-3 img{transform:none}
 }
+
+/* A imagem da marca possui margem interna; o recorte amplia o logotipo visível. */
+.brand-logo{width:clamp(17rem,28vw,20rem);height:5rem;object-fit:cover;object-position:center}
+.site-header .brand-logo{object-position:center 45%;transform:none}
+@media(max-width:700px){.site-header .brand{margin-left:-3rem}.site-header .brand-logo{width:17rem;height:5rem;object-position:center 45%;transform:none}}
